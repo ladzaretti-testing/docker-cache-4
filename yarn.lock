@@ -652,13 +652,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fast-check/jest@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@fast-check/jest@npm:1.6.0"
+"@fast-check/jest@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@fast-check/jest@npm:2.3.0"
   dependencies:
-    fast-check: ^3.0.0
+    fast-check: ^3.0.0 || ^4.0.0
   peerDependencies:
-    "@fast-check/worker": ~0.0.1
+    "@fast-check/worker": ">=0.0.7 <0.7.0"
     "@jest/expect": ">=28.0.0"
     "@jest/globals": ">=25.5.2"
   peerDependenciesMeta:
@@ -666,7 +666,7 @@ __metadata:
       optional: true
     "@jest/expect":
       optional: true
-  checksum: d2e06d7dc218655b643f397cd0ed20d54bab2ce28440e4129f34e56ba912f4dea4fd365de17ca8872f5a96a686d3ade893fcea4fec1d2e12d461c2e58fc47fda
+  checksum: 5226c1a989883e2bf1c86d1b0fc5a4362e92722c9d13c1e405029efbf191d157ce932ee4c5ff85bd5cc4c3ae7b17e467ef0febfbeaa0e7c96a46aa42779eca34
   languageName: node
   linkType: hard
 
@@ -2438,7 +2438,7 @@ __metadata:
   dependencies:
     "@actions/cache": 3.2.1
     "@actions/core": 1.10.0
-    "@fast-check/jest": 1.6.0
+    "@fast-check/jest": 2.3.0
     "@jest/globals": 29.5.0
     "@jest/types": 29.5.0
     "@tsconfig/node18-strictest-esm": 1.0.1
@@ -2788,12 +2788,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-check@npm:3.7.0, fast-check@npm:^3.0.0":
+"fast-check@npm:3.7.0":
   version: 3.7.0
   resolution: "fast-check@npm:3.7.0"
   dependencies:
     pure-rand: ^6.0.0
   checksum: 1161b47e4eb09a20a13713a60dbf4d7c606411811a97eb899535e19006a09558c85743bef95363e1613e1b9a4171692feda218ca15d8f3931e5d75113fc9a9c9
+  languageName: node
+  linkType: hard
+
+"fast-check@npm:^3.0.0 || ^4.0.0":
+  version: 4.10.2
+  resolution: "fast-check@npm:4.10.2"
+  dependencies:
+    pure-rand: ^8.0.0
+  checksum: 172eb559feceea2b226feb3bf9b867bd16f3b873b083c28e13e854adf4fde1e6a152418a50d4d97c998cc3cc684ea006247a9962d9485083a04fa5d995cc3b9f
   languageName: node
   linkType: hard
 
@@ -4870,6 +4879,13 @@ __metadata:
   version: 6.0.0
   resolution: "pure-rand@npm:6.0.0"
   checksum: ad1378d0a4859482d053a5264b2b485b445ece4bbc56f8959c233ea678b81ac2d613737925d496ded134eff5f29cc5546bf7492b6bce319ee27bebbad8a0c612
+  languageName: node
+  linkType: hard
+
+"pure-rand@npm:^8.0.0":
+  version: 8.4.2
+  resolution: "pure-rand@npm:8.4.2"
+  checksum: 84bb2d24e817539eb65a44a2ffb76c8e097d97e14275e59abdf3e86a69784c7bee7fc258f9a12222acd5699772ffdfaa5272bce37526713483e508eebd0c4b23
   languageName: node
   linkType: hard
 
