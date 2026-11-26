@@ -652,13 +652,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fast-check/jest@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@fast-check/jest@npm:1.6.0"
+"@fast-check/jest@npm:3.0.0":
+  version: 3.0.0
+  resolution: "@fast-check/jest@npm:3.0.0"
   dependencies:
-    fast-check: ^3.0.0
+    fast-check: ^4.10.3 || >=5.0.0-alpha <5.0.0 || ^5.0.0
   peerDependencies:
-    "@fast-check/worker": ~0.0.1
+    "@fast-check/worker": ">=0.7.0 <0.8.0"
     "@jest/expect": ">=28.0.0"
     "@jest/globals": ">=25.5.2"
   peerDependenciesMeta:
@@ -666,7 +666,7 @@ __metadata:
       optional: true
     "@jest/expect":
       optional: true
-  checksum: d2e06d7dc218655b643f397cd0ed20d54bab2ce28440e4129f34e56ba912f4dea4fd365de17ca8872f5a96a686d3ade893fcea4fec1d2e12d461c2e58fc47fda
+  checksum: 3c8244a338bd852071baf2e983ddf35ae585b523edb153df77db535d20d195c1e6d5ea3463e95befe500c82c704c2e4dc9f9b989344659184d1f90fdb592e12c
   languageName: node
   linkType: hard
 
@@ -2438,7 +2438,7 @@ __metadata:
   dependencies:
     "@actions/cache": 3.2.1
     "@actions/core": 1.10.0
-    "@fast-check/jest": 1.6.0
+    "@fast-check/jest": 3.0.0
     "@jest/globals": 29.5.0
     "@jest/types": 29.5.0
     "@tsconfig/node18-strictest-esm": 1.0.1
@@ -2788,12 +2788,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-check@npm:3.7.0, fast-check@npm:^3.0.0":
+"fast-check@npm:3.7.0":
   version: 3.7.0
   resolution: "fast-check@npm:3.7.0"
   dependencies:
     pure-rand: ^6.0.0
   checksum: 1161b47e4eb09a20a13713a60dbf4d7c606411811a97eb899535e19006a09558c85743bef95363e1613e1b9a4171692feda218ca15d8f3931e5d75113fc9a9c9
+  languageName: node
+  linkType: hard
+
+"fast-check@npm:^4.10.3 || >=5.0.0-alpha <5.0.0 || ^5.0.0":
+  version: 4.11.0
+  resolution: "fast-check@npm:4.11.0"
+  dependencies:
+    pure-rand: ^8.0.0
+  checksum: 521bdd22fd68b45eae7d52a650dd2bcaef6ddba8f02ddc2ca37ba53700dcb5239cb10edad0ee12ccd9d0f5b4a172df14a2ae491a328a08717126b3abc9d7af51
   languageName: node
   linkType: hard
 
@@ -4870,6 +4879,13 @@ __metadata:
   version: 6.0.0
   resolution: "pure-rand@npm:6.0.0"
   checksum: ad1378d0a4859482d053a5264b2b485b445ece4bbc56f8959c233ea678b81ac2d613737925d496ded134eff5f29cc5546bf7492b6bce319ee27bebbad8a0c612
+  languageName: node
+  linkType: hard
+
+"pure-rand@npm:^8.0.0":
+  version: 8.4.2
+  resolution: "pure-rand@npm:8.4.2"
+  checksum: 84bb2d24e817539eb65a44a2ffb76c8e097d97e14275e59abdf3e86a69784c7bee7fc258f9a12222acd5699772ffdfaa5272bce37526713483e508eebd0c4b23
   languageName: node
   linkType: hard
 
